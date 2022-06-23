@@ -11,20 +11,20 @@
 
 %---------------------------------------------------------
   \cventry
-  {Senior Software Engineer} % Job title
-  {Assigncorp Canada} % Organization
-  {Toronto, Canada} % Location
-  
-  {Client } % Job title
-  {Ford Motor Company} % Organization
-  {Kanata, Canada} % Location 
-  {Nov 2020 - Present} % Date(s)
-  {
-    \begin{cvitems}
-      \item {Wrote RESTful microservices for HL7 parsers, CCD messages using Java 8, Spring Boot, Kafka, PostgreSQL, JUnit, Mockito, Git.}
-      \item {Implemented IaC, build pipeline using Jenkins, Docker, CloudFormation/Terraform.}
-    \end{cvitems}
-  }
+    {Senior Software Engineer} % Job title
+    {Assigncorp Canada} % Organization
+    {Toronto, Canada} % Location
+    {Nov 2020 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Designed deployment architechture and migration of test case management system (TestRail) from datacenter to GCP.}
+        \item {Wrote bash scripts to deploy TestRail, MariaDB and Cassandra docker containers and to backup and restore data on a daily basis in GCE (Google Compute Instance).}
+        \item {POC - implemented cloud native cluster-level Kubernetes storage (Rook/Ceph) operator for block and file systems storage in GKE (Google Kubernetes Engine) using HELM charts and Terraform scripts.}
+        \item {POC - IaC using Terraform implemented cloud native registry (Harbor) in GKE to push and pull helm charts and docker images using OCI skopeo.}
+        \item {POC - implementation of cloud native CI/CD, defined Tekton tasks, task run, pipeline, pipeline run, and used kaniko to build and push images to Harbor registry in GKE.}
+        \item {Replaced ccache with sccache to build Android ASOP that enhanced build cache and resulted in faster build times.}
+      \end{cvitems}
+    }
 
 %---------------------------------------------------------
   \cventry
